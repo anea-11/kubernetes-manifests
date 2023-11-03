@@ -18,7 +18,7 @@ spec:
         ports:
         - containerPort: {{ .Values.containerPort }}
         env:
-        {{-range .Values.containerEnvVars}}
+        {{- range .Values.containerEnvVars }}
         - name: {{ .name }}
           value: {{ .value | quote }}   # | quote is used to cast to string - env vars must be strings
-        {{-end}}
+        {{- end }}

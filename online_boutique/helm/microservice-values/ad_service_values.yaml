@@ -1,6 +1,6 @@
 appName: ad-service
 appImage: gcr.io/google-samples/microservices-demo/adservice
-appVersion: v.0.8.1
+appVersion: v0.8.1
 appReplicas: 2
 containerPort: 9555
 containerEnvVars:
