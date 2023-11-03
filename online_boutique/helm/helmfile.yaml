@@ -1,0 +1,63 @@
+# helmfile sync - to sync k8s cluster with the state defined in this helmfile
+
+releases:
+
+# helm install -f microservice-values/ad_service_values.yaml adservice microservice-chart/
+- name: adservice
+  chart: microservice-chart
+  values:
+  - microservice-values/ad_service_values.yaml
+
+# helm install -f microservice-values/cart_service_values.yaml cartservice microservice-chart/
+- name: cartservice
+  chart: microservice-chart
+  values:
+  - microservice-values/cart_service_values.yaml
+
+# helm install -f microservice-values/checkout_service_values.yaml checkoutservice microservice-chart/
+- name: checkoutservice
+  chart: microservice-chart
+  values:
+  - microservice-values/checkout_service_values.yaml
+
+# helm install -f microservice-values/currency_service_values.yaml currencyservice microservice-chart/
+- name: currencyservice
+  chart: microservice-chart
+  values:
+  - microservice-values/currency_service_values.yaml
+
+# helm install -f microservice-values/email_service_values.yaml emailservice microservice-chart/
+- name: emailservice
+  chart: microservice-chart
+  values:
+  - microservice-values/email_service_values.yaml
+
+# helm install -f microservice-values/frontend_service_values.yaml frontendservice microservice-chart/
+- name: frontendservice
+  chart: microservice-chart
+  values:
+  - microservice-values/frontend_service_values.yaml
+
+# helm install -f microservice-values/payment_service_values.yaml paymentservice microservice-chart/
+- name: paymentservice
+  chart: microservice-chart
+  values:
+  - microservice-values/payment_service_values.yaml
+
+# helm install -f microservice-values/product_catalog_service_values.yaml productcatalogservice microservice-chart/
+- name: productcatalogservice
+  chart: microservice-chart
+  values:
+  - microservice-values/product_catalog_service_values.yaml
+
+# helm install -f microservice-values/recommendation_service_values.yaml recommendationservice microservice-chart/
+- name: recommendationservice
+  chart: microservice-chart
+  values:
+  - microservice-values/recommendation_service_values.yaml
+
+# helm install -f microservice-values/shipping_service_values.yaml shippingservice microservice-chart/
+- name: shippingservice
+  chart: microservice-chart
+  values:
+  - microservice-values/shipping_service_values.yaml
