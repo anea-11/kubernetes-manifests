@@ -1,3 +1,5 @@
+namespace: online-boutique
+
 appName: cart-service
 appImage: gcr.io/google-samples/microservices-demo/cartservice
 appVersion: v0.8.1

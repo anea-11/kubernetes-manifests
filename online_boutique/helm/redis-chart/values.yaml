@@ -1,5 +1,7 @@
 # default values for redis helm chart
  
+namespace: some-namespace
+
 appName: redis
 appImage: redis
 appVersion: alpine

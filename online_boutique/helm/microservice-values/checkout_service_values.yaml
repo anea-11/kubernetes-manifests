@@ -1,3 +1,5 @@
+namespace: online-boutique
+
 appName: checkout-service
 appImage: gcr.io/google-samples/microservices-demo/checkoutservice
 appVersion: v0.8.1

@@ -1,3 +1,5 @@
+namespace: online-boutique
+
 appName: redis-cart
 appImage: redis
 appVersion: alpine

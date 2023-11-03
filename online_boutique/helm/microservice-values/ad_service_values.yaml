@@ -1,3 +1,5 @@
+namespace: online-boutique
+
 appName: ad-service
 appImage: gcr.io/google-samples/microservices-demo/adservice
 appVersion: v0.8.1

@@ -1,5 +1,7 @@
 # default values for templates
 
+namespace: some-namespace
+
 appName: app-service-name
 appImage: gcr.io/google-samples/microservices-demo/app-service-name
 appVersion: v.0.0.0

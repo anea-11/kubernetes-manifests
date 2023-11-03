@@ -1,3 +1,5 @@
+namespace: online-boutique
+
 appName: recommendation-service
 appImage: gcr.io/google-samples/microservices-demo/recommendationservice
 appVersion: v0.8.1

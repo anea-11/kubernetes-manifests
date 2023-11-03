@@ -1,3 +1,5 @@
+namespace: online-boutique
+
 appName: product-catalog-service
 appImage: gcr.io/google-samples/microservices-demo/productcatalogservice
 appVersion: v0.8.1

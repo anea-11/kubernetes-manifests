@@ -1,3 +1,5 @@
+namespace: online-boutique
+
 appName: email-service
 appImage: gcr.io/google-samples/microservices-demo/emailservice
 appVersion: v0.8.1
