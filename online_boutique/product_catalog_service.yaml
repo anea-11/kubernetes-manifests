@@ -27,12 +27,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: your-service-name
+  name: product-catalog-service
 spec:
   selector:
     app: product-catalog-service
   ports:
-    - protocol: TCP
+    - name: grpc
       port: 3550
       targetPort: 3550
   type: ClusterIP

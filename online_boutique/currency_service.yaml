@@ -27,7 +27,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: your-service-name
+  name: currency-service
 spec:
   selector:
     app: currency-service
