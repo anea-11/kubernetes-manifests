@@ -1,6 +1,6 @@
 appName: shipping-service
 appImage: gcr.io/google-samples/microservices-demo/shippingservice
-appVersion: v..8.1
+appVersion: v0.8.1
 appReplicas: 2
 containerPort: 50051
 containerEnvVars:
