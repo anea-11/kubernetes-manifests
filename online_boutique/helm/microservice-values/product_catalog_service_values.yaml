@@ -1,0 +1,14 @@
+appName: product-catalog-service
+appImage: gcr.io/google-samples/microservices-demo/productcatalogservice
+appVersion: v.0.8.1
+appReplicas: 2
+containerPort: 3550
+containerEnvVars:
+- name: PORT
+  value: "3550"
+- name: DISABLE_PROFILER
+  value: "1"
+
+servicePortName: grpc
+servicePort: 3550
+serviceType: ClusterIP
