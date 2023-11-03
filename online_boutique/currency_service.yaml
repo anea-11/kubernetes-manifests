@@ -32,7 +32,7 @@ spec:
   selector:
     app: currency-service
   ports:
-    - protocol: TCP
+    - name: grpc
       port: 7000
       targetPort: 7000
   type: ClusterIP
