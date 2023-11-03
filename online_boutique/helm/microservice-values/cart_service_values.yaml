@@ -12,6 +12,10 @@ containerEnvVars:
   value : "1"
 - name: REDIS_ADDR
   value: "redis-cart:6379"
+cpuRequests: 200m
+memoryRequests: 64Mi
+cpuLimits: 300m
+memoryLimits: 128Mi
 
 servicePortName: grpc
 servicePort: 7070

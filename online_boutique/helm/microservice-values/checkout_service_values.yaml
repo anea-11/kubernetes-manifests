@@ -20,6 +20,10 @@ containerEnvVars:
   value: "currency-service:7000"
 - name: CART_SERVICE_ADDR
   value: "cart-service:7070"
+cpuRequests: 100m
+memoryRequests: 64Mi
+cpuLimits: 200m
+memoryLimits: 128Mi
 
 servicePortName: grpc
 servicePort: 5050

@@ -32,6 +32,10 @@ containerEnvVars:
 #   value: "true"
 # - name: FRONTEND_MESSAGE
 #   value: "Replace this with a message you want to display on all pages."
+cpuRequests: 100m
+memoryRequests: 64Mi
+cpuLimits: 200m
+memoryLimits: 128Mi
 
 servicePortName: http
 servicePort: 80

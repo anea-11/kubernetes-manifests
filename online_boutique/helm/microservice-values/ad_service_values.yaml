@@ -8,6 +8,10 @@ containerPort: 9555
 containerEnvVars:
 - name: PORT
   value: "9555"
+cpuRequests: 200m
+memoryRequests: 180Mi
+cpuLimits: 300m
+memoryLimits: 300Mi
 
 servicePortName: grpc
 servicePort: 9555

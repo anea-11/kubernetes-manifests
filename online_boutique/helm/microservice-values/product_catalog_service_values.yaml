@@ -10,6 +10,10 @@ containerEnvVars:
   value: "3550"
 - name: DISABLE_PROFILER
   value: "1"
+cpuRequests: 100m
+memoryRequests: 64Mi
+cpuLimits: 200m
+memoryLimits: 128Mi
 
 servicePortName: grpc
 servicePort: 3550

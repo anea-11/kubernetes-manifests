@@ -25,6 +25,13 @@ spec:
       volumes:
       - name: {{ .Values.volumeName }}
         emptyDir: {}
+      resources:
+        requests:
+          cpu: {{ .Values.cpuRequests }}
+          memory: {{ .Values.memoryRequests }}
+        limits:
+          cpu: {{ .Values.cpuLimits }}
+          memory: {{ .Values.memoryLimits }}
 ---
 apiVersion: v1
 kind: Service

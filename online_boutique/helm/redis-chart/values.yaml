@@ -8,6 +8,10 @@ appVersion: alpine
 appReplicas: 2
 containerPort: 6379
 volumeName: redis-data
+cpuRequests: 100m
+memoryRequests: 64Mi
+cpuLimits: 200m
+memoryLimits: 128Mi
 
 servicePort: 6379
 serviceType: ClusterIP

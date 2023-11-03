@@ -23,3 +23,10 @@ spec:
         - name: {{ .name }}
           value: {{ .value | quote }}   # | quote is used to cast to string - env vars must be strings
         {{- end }}
+        resources:
+          requests:
+            cpu: {{ .Values.cpuRequests }}
+            memory: {{ .Values.memoryRequests }}
+          limits:
+            cpu: {{ .Values.cpuLimits }}
+            memory: {{ .Values.memoryLimits }}

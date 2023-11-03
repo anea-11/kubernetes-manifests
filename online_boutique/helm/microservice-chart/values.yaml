@@ -13,6 +13,10 @@ containerEnvVars:
 - name: "ENV_VAR_2"
   value: "env-var-2-value"
 # add as many env vars as needed
+cpuRequests: 100
+memoryRequests: 64Mi
+cpuLimits: 200
+memoryLimits: 128Mi
 
 servicePortName: port-name # example: grpc, http
 servicePort: 8080
