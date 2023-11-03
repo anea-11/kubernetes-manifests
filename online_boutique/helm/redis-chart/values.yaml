@@ -1,0 +1,11 @@
+# default values for redis helm chart
+ 
+appName: redis
+appImage: redis
+appVersion: alpine
+appReplicas: 2
+containerPort: 6379
+volumeName: redis-data
+
+servicePort: 6379
+serviceType: ClusterIP

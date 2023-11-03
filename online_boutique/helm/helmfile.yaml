@@ -61,3 +61,9 @@ releases:
   chart: microservice-chart
   values:
   - microservice-values/shipping_service_values.yaml
+
+# helm install -f redis-values/redis_cart_values.yaml rediscart redis-chart/
+- name: rediscart
+  chart: redis-chart
+  values:
+  - redis-values/redis_cart_values.yaml

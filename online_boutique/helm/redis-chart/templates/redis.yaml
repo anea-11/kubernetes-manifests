@@ -1,0 +1,40 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.appName }}
+spec:
+  replicas: {{ .Values.appReplicas }}
+  selector:
+    matchLabels:
+      app: {{ .Values.appName }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.appName }}
+    spec:
+      containers:
+      - name: redis
+        image: {{ .Values.appImage }}:{{ .Values.appVersion }}
+        ports:
+        - containerPort: {{ .Values.containerPort }}
+        volumeMounts:
+        - mountPath: /data
+          name: {{ .Values.volumeName }}
+      volumes:
+      - name: {{ .Values.volumeName }}
+        emptyDir: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.appName }}
+spec:
+  selector:
+    app: {{ .Values.appName }}
+  ports:
+    - name: tcp-redis
+      port: {{ .Values.servicePort }}
+      targetPort: {{ .Values.containerPort }}
+  type: {{ .Values.serviceType }}
+  
