@@ -8,4 +8,4 @@ kubectl patch storageclass gp2 -p '{"metadata": {"annotations":{"storageclass.ku
 
 # Install this chart
 
-helm install efs-storage-class --namespace monitoring global/helm/global-chart/ --set efsId="fs-05bf4b2e6b521c4a5"
+helm install efs-storage-class  global/helm/global-chart/ --set efsId="fs-05bf4b2e6b521c4a5"
