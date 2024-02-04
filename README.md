@@ -1,11 +1,8 @@
 # Overview
 
-This repository contains kubernetes manifest files and helm charts for:
-1. CLuster global
-2. Google's online boutique microservices demo app: https://github.com/GoogleCloudPlatform/microservices-demo
-3. (TODO) Encoding app
+* This repository contains kubernetes manifest files and helm charts for deploying **online-boutique** and Prometheus/Grafana stack for monitoring cluster health to AWS EKS cluster
+* Helm charts and manifest files from this repository are used by [ansible playbooks](https://github.com/anea-11/infra-config/tree/main/playbooks) to automate cluster configuration and app deployment
 
-# Namespaces
-Namespaces are defined in global manifest files.
-Online boutique app resides in "online-boutique" namespace.
-Encoding app resides in "encoding-app" namespace.
+# Cluster structure
+
+![cluster structure](docs/images/eks-cluster.jpg)
